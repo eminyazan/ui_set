@@ -4,31 +4,31 @@ import 'package:ui_set/src/shared/styles.dart';
 
 import '../../ui_set.dart';
 
-class BoxText extends StatelessWidget {
+class UISetText extends StatelessWidget {
   final String text;
   final TextStyle style;
   final TextAlign alignment;
 
-  const BoxText.headingOne(this.text, {TextAlign align = TextAlign.start})
+  const UISetText.headingOne(this.text, {TextAlign align = TextAlign.start})
       : style = heading1Style,
         alignment = align;
-  const BoxText.headingTwo(this.text, {TextAlign align = TextAlign.start})
+  const UISetText.headingTwo(this.text, {TextAlign align = TextAlign.start})
       : style = heading2Style,
         alignment = align;
-  const BoxText.headingThree(this.text, {TextAlign align = TextAlign.start})
+  const UISetText.headingThree(this.text, {TextAlign align = TextAlign.start})
       : style = heading3Style,
         alignment = align;
-  const BoxText.headline(this.text, {TextAlign align = TextAlign.start})
+  const UISetText.headline(this.text, {TextAlign align = TextAlign.start})
       : style = headlineStyle,
         alignment = align;
-  const BoxText.subheading(this.text, {TextAlign align = TextAlign.start})
+  const UISetText.subheading(this.text, {TextAlign align = TextAlign.start})
       : style = subheadingStyle,
         alignment = align;
-  const BoxText.caption(this.text, {TextAlign align = TextAlign.start})
+  const UISetText.caption(this.text, {TextAlign align = TextAlign.start})
       : style = captionStyle,
         alignment = align;
 
-  BoxText.body(this.text,
+  UISetText.body(this.text,
       {Key? key, Color color = kcMediumGreyColor, TextAlign align = TextAlign.start})
       : style = bodyStyle.copyWith(color: color),
         alignment = align, super(key: key);

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../ui_set.dart';
 
-class AutoCompleteListItem extends StatelessWidget {
+class UISetAutoCompleteListItem extends StatelessWidget {
   final String state, city;
   final Function onTap;
   final IconData icon;
 
-  const AutoCompleteListItem(
+  const UISetAutoCompleteListItem(
       {Key? key, required this.state, required this.city, required this.onTap, required this.icon})
       : super(key: key);
 
@@ -23,8 +23,8 @@ class AutoCompleteListItem extends StatelessWidget {
             color: kcMediumGreyColor,
           ),
           onTap: () => onTap(),
-          title: BoxText.subheading(city),
-          subtitle: BoxText.caption(state),
+          title: UISetText.subheading(city),
+          subtitle: UISetText.caption(state),
         ),
         const Divider(
           indent: 50,

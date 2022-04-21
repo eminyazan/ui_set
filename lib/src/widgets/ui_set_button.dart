@@ -4,7 +4,7 @@ import 'package:ui_set/src/shared/styles.dart';
 
 import '../../ui_set.dart';
 
-class BoxButton extends StatelessWidget {
+class UISetButton extends StatelessWidget {
   final String title;
   final bool disabled;
   final bool busy;
@@ -12,7 +12,7 @@ class BoxButton extends StatelessWidget {
   final bool outline;
   final Widget? leading;
 
-  const BoxButton({
+  const UISetButton({
     Key? key,
     required this.title,
     this.disabled = false,
@@ -22,7 +22,7 @@ class BoxButton extends StatelessWidget {
   })  : outline = false,
         super(key: key);
 
-  const BoxButton.outline({
+  const UISetButton.outline({
     Key? key,
     required this.title,
     this.onTap,
@@ -68,7 +68,7 @@ class BoxButton extends StatelessWidget {
                 ],
               )
             : const CircularProgressIndicator(
-                strokeWidth: 8,
+                strokeWidth: 5,
                 valueColor: AlwaysStoppedAnimation(Colors.white),
               ),
       ),

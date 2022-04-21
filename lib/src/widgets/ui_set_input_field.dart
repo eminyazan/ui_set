@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../ui_set.dart';
 
-class BoxInputField extends StatelessWidget {
+class UISetInputField extends StatelessWidget {
   final TextEditingController controller;
   final String placeholder;
   final Widget? leading;
@@ -14,7 +14,7 @@ class BoxInputField extends StatelessWidget {
     borderRadius: BorderRadius.circular(8),
   );
 
-  BoxInputField({
+  UISetInputField({
     Key? key,
     required this.controller,
     this.placeholder = '',

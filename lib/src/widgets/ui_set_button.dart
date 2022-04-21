@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:ui_set/src/shared/styles.dart';
 
-import '../../box_ui.dart';
+import '../../ui_set.dart';
 
 class BoxButton extends StatelessWidget {
   final String title;

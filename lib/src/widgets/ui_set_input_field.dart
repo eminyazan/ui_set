@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../box_ui.dart';
+import '../../ui_set.dart';
 
 class BoxInputField extends StatelessWidget {
   final TextEditingController controller;
